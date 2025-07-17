@@ -114,38 +114,90 @@
         <div class="row mt-5">
             <div class="col-12">
                 <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg> アクセス情報</h2>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">メルボルン空港 (Tullamarine) からAirbnbまで</h5>
-                        <p class="card-text">
-                            最も一般的で効率的な方法は、SkyBusと電車の組み合わせです。
-                            <ol>
-                                <li><strong>SkyBusでSouthern Cross駅へ:</strong> メルボルン空港からSkyBusで市内中心部のSouthern Cross駅へ移動します。</li>
-                                <li><strong>電車でRichmond駅へ:</strong> Southern Cross駅からMykiカードを使ってRichmond駅へ電車で移動します。Belgrave, Lilydale, Glen Waverley, Alameinなどの路線がRichmond駅に停車します。</li>
-                                <li><strong>Richmond駅からAirbnbまで徒歩:</strong> Richmond駅から60 Stanley Streetまでは徒歩圏内です。</li>
-                            </ol>
-                            <small class="text-muted">※MykiカードはSkyBus以外の公共交通機関で必要です。駅やセブンイレブンで購入・チャージできます。</small>
-                        </p>
-                    </div>
-                </div>
+            </div>
+
+            <!-- 空港からAirbnb -->
+            <div class="col-md-12 mb-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">AirbnbからMCG (Melbourne Cricket Ground) まで</h5>
-                        <p class="card-text">
-                            MCGへは徒歩、トラム、電車など複数の方法があります。
-                            <ul>
-                                <li><strong>徒歩:</strong> 約2.1km、24分程度の距離です。</li>
-                                <li><strong>トラム:</strong>
-                                    <ul>
-                                        <li><strong>トラム70番:</strong> Richmond Station/Swan St #8からMCG Gates 4-7/John Cain Arena #7Cまで直通です。</li>
-                                        <li><strong>トラム48番:</strong> Richmond Town Hall/Bridge Rd #19からJolimont Station-MCG/Wellington Pde #11まで。</li>
-                                        <li><strong>トラム75番:</strong> Flinders StreetとWellington Parade沿いを走り、MCGのすぐ外に停車します。</li>
-                                    </ul>
-                                </li>
-                                <li><strong>電車:</strong> Richmond駅が最寄りの駅で、MCGの南東側に位置します。Jolimont駅も選択肢の一つで、Yarra Parkを抜けてMCGまで徒歩5分です。</li>
-                            </ul>
-                            <small class="text-muted">※最新の運行情報やルートはPTV (Public Transport Victoria) のJourney Plannerをご利用ください。</small>
-                        </p>
+                        <h5 class="card-title">メルボルン空港 (Tullamarine) → Airbnb</h5>
+                        <p>最も一般的な方法は、SkyBusと電車の組み合わせです。</p>
+                        
+                        <div class="map-container mb-3">
+                            <iframe width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                src="https://maps.google.com/maps?q=directions%20from%20Melbourne%20Airport%20to%2060%20Stanley%20St%2C%20Richmond%20VIC%203121%2C%20Australia&t=&z=11&ie=UTF8&iwloc=&output=embed">
+                            </iframe>
+                        </div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <img src="images/bus_icon.png" alt="Bus Icon" class="me-3" style="width: 32px; height: 32px;">
+                                <div>
+                                    <strong>ステップ1: SkyBusでSouthern Cross駅へ</strong><br>
+                                    メルボルン空港からSkyBusで市内中心部のSouthern Cross駅へ移動します。
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <img src="images/tram_icon.png" alt="Tram Icon" class="me-3" style="width: 32px; height: 32px;">
+                                <div>
+                                    <strong>ステップ2: 電車でRichmond駅へ</strong><br>
+                                    Southern Cross駅からMykiカードを使い、Richmond駅へ移動します。
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <img src="images/walk_icon.png" alt="Walk Icon" class="me-3" style="width: 32px; height: 32px;">
+                                <div>
+                                    <strong>ステップ3: Richmond駅から徒歩</strong><br>
+                                    Richmond駅から宿泊先までは徒歩圏内です。
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-footer text-muted">
+                            <small>※Mykiカードは駅やセブンイレブンで購入・チャージできます。</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AirbnbからMCG -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Airbnb → MCG (Melbourne Cricket Ground)</h5>
+                        <p>MCGへは徒歩、トラム、電車など複数の方法があります。</p>
+
+                        <div class="map-container mb-3">
+                            <iframe width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                src="https://maps.google.com/maps?q=directions%20from%2060%20Stanley%20St%2C%20Richmond%20VIC%203121%2C%20Australia%20to%20Melbourne%20Cricket%20Ground&t=&z=14&ie=UTF8&iwloc=&output=embed">
+                            </iframe>
+                        </div>
+                        
+                        <div class="row text-center">
+                            <div class="col-lg-4">
+                                <div class="p-3 border rounded mb-3">
+                                    <img src="images/walk_icon.png" alt="Walk Icon" class="me-3" style="width: 32px; height: 32px;">
+                                    <h6>徒歩</h6>
+                                    <p class="small">約2.1km、24分程度</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="p-3 border rounded mb-3">
+                                    <img src="images/tram_icon.png" alt="Tram Icon" class="mb-2" style="width: 40px; height: 40px;">
+                                    <h6>トラム</h6>
+                                    <p class="small">70, 48, 75番が利用可能</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="p-3 border rounded mb-3">
+                                    <img src="images/tram_icon.png" alt="Tram Icon" class="mb-2" style="width: 40px; height: 40px;">
+                                    <h6>電車</h6>
+                                    <p class="small">Richmond駅またはJolimont駅</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted">
+                           <small>※最新の運行情報やルートはPTV (Public Transport Victoria) のJourney Plannerをご利用ください。</small>
+                        </div>
                     </div>
                 </div>
             </div>
