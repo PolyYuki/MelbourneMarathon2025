@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>メルボルンマラソン2025 日本チーム</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
@@ -16,10 +17,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <span class="navbar-text date me-auto">
-                    12 OCTOBER 2025
-                </span>
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">ホーム</a></li>
+                    <li class="nav-item"><a class="nav-link" href="participants.html">参加者一覧</a></li>
+                    <li class="nav-item"><a class="nav-link" href="itinerary.html">旅程</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accommodation.html">宿泊情報</a></li>
+                    <li class="nav-item"><a class="nav-link" href="access.html">アクセス情報</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">最新情報</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">ギャラリー</a></li>
                 </ul>
             </div>
         </div>
@@ -36,208 +41,91 @@
     </div>
 
     <div class="container my-5">
-        <div class="text-center mb-5">
-            <h2><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16"><path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/></svg> 参加者一覧</h2>
+        <!-- Site Overview -->
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="h4">チームの情報共有ハブ</h2>
+                <p class="lead text-muted">このサイトはメルボルンマラソン2025に参加する「チーム他者貢献ズ」の情報共有ハブです。旅程や宿泊先、緊急連絡先などを集約していますので、渡航前に必ず確認してください。</p>
+            </div>
         </div>
 
-        <div id="participant-list" class="row gy-4 mb-5">
-            <!-- 参加者カードはここにJavaScriptで挿入されます -->
+        <!-- Card Links -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-people-fill fs-2 text-primary"></i>
+                        <h5 class="card-title mt-3">参加者一覧</h5>
+                        <p class="card-text">チームの仲間たちをチェック！</p>
+                        <a href="participants.html" class="btn btn-primary">一覧を見る</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-calendar-event fs-2 text-primary"></i>
+                        <h5 class="card-title mt-3">旅程</h5>
+                        <p class="card-text">大会までの全スケジュールを確認。</p>
+                        <a href="itinerary.html" class="btn btn-primary">旅程を見る</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-building fs-2 text-primary"></i>
+                        <h5 class="card-title mt-3">宿泊 & アクセス</h5>
+                        <p class="card-text">滞在先と交通手段の詳細はこちら。</p>
+                        <a href="accommodation.html" class="btn btn-primary">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-images fs-2 text-primary"></i>
+                        <h5 class="card-title mt-3">ギャラリー</h5>
+                        <p class="card-text">思い出の写真を共有・閲覧。</p>
+                        <a href="gallery.html" class="btn btn-primary">写真を見る</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="row">
-            <div class="row">
-            <div class="col-12">
-                <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/></svg> 旅程 (2025/10/10 - 10/16)</h2>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>日付</th>
-                            <th>曜日</th>
-                            <th>予定</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>10/10</td><td>金</td><td>各自日本発、機内泊<br>小山内ファミリー 東京(成田)  JL773 18:40</td></tr>
-                        <tr><td>10/11</td><td>土</td><td>小山内ファミリー メルボルン着 JL773 6:45<br>メルボルン到着、RUNNERS EXPOにてゼッケン受取、宿泊先チェックイン、観光、前夜祭</td></tr>
-                        <tr><td>10/12</td><td>日</td><td><strong>メルボルンマラソン出場・応援、打ち上げ</strong></td></tr>
-                        <tr><td>10/13</td><td>月</td><td>ワイナリーツアー、動物園</td></tr>
-                        <tr><td>10/14</td><td>火</td><td>マーケット、ショッピング、メルボルン発、帰国の途へ</td></tr>
-                        <tr><td>10/15</td><td>水</td><td>小山内ファミリー JL774 メルボルン8:25 → 東京16:20、JAL151 東京19:45 → 青森21:00<br>日本到着</td></tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-12">
-                <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16"><path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/><path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/></svg> 宿泊情報</h2>
-                <div id="hotel-info" class="card">
-                    <div class="row g-0">
-                        <div class="col-6">
-                            <img src="images/accommodation_photo.avif" class="card-img-top rounded-start" alt="宿泊施設写真">
+            <!-- Latest News -->
+            <div class="col-lg-6 mb-4">
+                <h3><i class="bi bi-info-circle"></i> 最新情報</h3>
+                <div class="list-group">
+                    <a href="news.html" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">ウェブサイトをリニューアル</h6>
+                            <small>2025/07/18</small>
                         </div>
-                        <div class="col-6">
-                            <img src="images/accommodation_photo_2.avif" class="card-img-top rounded-end" alt="宿泊施設写真2">
+                        <p class="mb-1">サイト構成を刷新し、各情報ページを作成しました。</p>
+                    </a>
+                    <a href="news.html" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">旅程を更新</h6>
+                            <small>2025/07/18</small>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">宿泊先: Airbnb</h5>
-                        <p class="card-text"><strong>予約期間:</strong> 2025年10月11日(土) 〜 10月14日(火)</p>
-                        <p class="card-text"><strong>人数:</strong> 8名</p>
-                        <p class="card-text"><strong>チェックイン:</strong> 10月11日(土) 14pm</p>
-                        <p class="card-text"><strong>チェックアウト:</strong> 10月14日(火) 10am</p>
-                        <hr>
-                        <h6 class="card-subtitle mb-2 text-muted">物件概要</h6>
-                        <p class="card-text">
-                            活気あるリッチモンドの中心に位置する、シックでスタイリッシュな4ベッドルームの宿泊施設です。レストラン、MCG、ロッド・レーバー・アリーナ、CBDへ徒歩圏内で、メルボルンの文化やアトラクションを探索するのに最適です。
-                        </p>
-                        <h6 class="card-subtitle mb-2 text-muted">主な設備</h6>
-                        <ul class="list-unstyled">
-                            <li><small>・2つのリビングエリア、スマートTV、高速WiFi</small></li>
-                            <li><small>・フレンチプロヴァンス風の充実したキッチン</small></li>
-                            <li><small>・屋外シーティングとBBQ付きの美しい中庭</small></li>
-                            <li><small>・ベッド構成: マスター(クイーン)、ベッドルーム2(キング、専用バスルーム)、ベッドルーム3(ダブル)、ベッドルーム4/スタジオ(シングル2台またはキング)</small></li>
-                            <li><small>・バスルーム: 2つのフルバスルーム、1つのハーフバスルーム</small></li>
-                            <li><small>・全館温水暖房完備</small></li>
-                            <li><small>・駐車場: 小型車1台分のガレージ、路上駐車許可証あり</small></li>
-                        </ul>
-                        <hr>
-                        <p class="card-text"><a href="https://www.airbnb.com.au/rooms/1114245584139130363?check_in=2025-10-11&check_out=2025-10-14&guests=8&adults=6&s=67&unique_share_id=1c9b14dd-77bd-4638-b409-aa57445cb972" target="_blank">Airbnbのサイトを見る</a></p>
-                        <div class="map-container mt-3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450937!2d144.9837343153183!3d-37.81720997975181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6428f3e3e1e3b%3A0x9d3d3b4f5e3e1e3b!2s60%20Stanley%20St%2C%20Richmond%20VIC%203121%2C%20Australia!5e0!3m2!1sen!2sjp!4v1627482953101!5m2!1sen!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- アクセス情報セクション -->
-        <div class="row mt-5">
-            <div class="col-12">
-                <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg> アクセス情報</h2>
-            </div>
-
-            <!-- 空港からAirbnb -->
-            <div class="col-md-12 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">メルボルン空港 (Tullamarine) → Airbnb</h5>
-                        <p>最も一般的な方法は、SkyBusと電車の組み合わせです。</p>
-                        
-                        <div class="map-container mb-3">
-                            <iframe width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                                src="https://maps.google.com/maps?q=directions%20from%20Melbourne%20Airport%20to%2060%20Stanley%20St%2C%20Richmond%20VIC%203121%2C%20Australia&t=&z=11&ie=UTF8&iwloc=&output=embed">
-                            </iframe>
-                        </div>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex align-items-center">
-                                <img src="images/bus_icon.png" alt="Bus Icon" class="me-3" style="width: 32px; height: 32px;">
-                                <div>
-                                    <strong>ステップ1: SkyBusでSouthern Cross駅へ</strong><br>
-                                    メルボルン空港からSkyBusで市内中心部のSouthern Cross駅へ移動します。
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center">
-                                <img src="images/tram_icon.png" alt="Tram Icon" class="me-3" style="width: 32px; height: 32px;">
-                                <div>
-                                    <strong>ステップ2: 電車でRichmond駅へ</strong><br>
-                                    Southern Cross駅からMykiカードを使い、Richmond駅へ移動します。
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center">
-                                <img src="images/walk_icon.png" alt="Walk Icon" class="me-3" style="width: 32px; height: 32px;">
-                                <div>
-                                    <strong>ステップ3: Richmond駅から徒歩</strong><br>
-                                    Richmond駅から宿泊先までは徒歩圏内です。
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="card-footer text-muted">
-                            <small>※Mykiカードは駅やセブンイレブンで購入・チャージできます。</small>
-                        </div>
-                    </div>
+                        <p class="mb-1">小山内ファミリーのフライト情報を追加しました。</p>
+                    </a>
+                     <a href="news.html" class="list-group-item list-group-item-action text-center">
+                        <strong>すべての最新情報を見る →</strong>
+                    </a>
                 </div>
             </div>
 
-            <!-- AirbnbからMCG -->
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Airbnb → MCG (Melbourne Cricket Ground)</h5>
-                        <p>MCGへは徒歩、トラム、電車など複数の方法があります。</p>
-
-                        <div class="map-container mb-3">
-                            <iframe width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                                src="https://maps.google.com/maps?q=directions%20from%2060%20Stanley%20St%2C%20Richmond%20VIC%203121%2C%20Australia%20to%20Melbourne%20Cricket%20Ground&t=&z=14&ie=UTF8&iwloc=&output=embed">
-                            </iframe>
-                        </div>
-                        
-                        <div class="row text-center">
-                            <div class="col-lg-4">
-                                <div class="p-3 border rounded mb-3">
-                                    <img src="images/walk_icon.png" alt="Walk Icon" class="me-3" style="width: 32px; height: 32px;">
-                                    <h6>徒歩</h6>
-                                    <p class="small">約2.1km、24分程度</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="p-3 border rounded mb-3">
-                                    <img src="images/tram_icon.png" alt="Tram Icon" class="mb-2" style="width: 40px; height: 40px;">
-                                    <h6>トラム</h6>
-                                    <p class="small">70, 48, 75番が利用可能</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="p-3 border rounded mb-3">
-                                    <img src="images/tram_icon.png" alt="Tram Icon" class="mb-2" style="width: 40px; height: 40px;">
-                                    <h6>電車</h6>
-                                    <p class="small">Richmond駅またはJolimont駅</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer text-muted">
-                           <small>※最新の運行情報やルートはPTV (Public Transport Victoria) のJourney Plannerをご利用ください。</small>
-                        </div>
-                    </div>
+            <!-- Quick Links -->
+            <div class="col-lg-6 mb-4">
+                <h3><i class="bi bi-link-45deg"></i> クイックリンク</h3>
+                <div class="list-group">
+                    <a href="https://melbournemarathon.com.au/" target="_blank" class="list-group-item list-group-item-action">メルボルンマラソン公式サイト</a>
+                    <a href="https://www.melbourne.au.emb-japan.go.jp/" target="_blank" class="list-group-item list-group-item-action">在メルボルン日本国総領事館</a>
+                    <a href="https://www.skybus.com.au/" target="_blank" class="list-group-item list-group-item-action">SkyBus 公式サイト</a>
                 </div>
-            </div>
-        </div>
-
-        <!-- 最新情報セクション -->
-        <div class="row mt-5">
-            <div class="col-12">
-                <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.064.293.006.399.287.47l.45.083.082.38-2.29-.287-.082-.38.45-.083c.294-.07.352-.176.288-.469l.738-3.468c.064-.293-.006-.399-.287-.47l-.45-.083-.082-.38zm.22-2.45a.93.93 0 1 0 0-1.86.93.93 0 0 0 0 1.86z"/></svg> 最新情報</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">2025/07/16: 宿泊情報とアクセス情報を更新しました。</li>
-                    <li class="list-group-item">2025/07/12: ウェブサイトを開設しました。</li>
-                    <!-- <li class="list-group-item">新しい情報</li> -->
-                </ul>
-            </div>
-        </div>
-
-        <!-- ギャラリーセクション -->
-        <div class="row mt-5">
-            <div class="col-12">
-                <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16"><path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/><path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/></svg> ギャラリー</h2>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="images/gallery_1.jpg" class="img-fluid rounded" alt="ギャラリー画像">
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="images/gallery_3.jpg" class="img-fluid rounded" alt="ギャラリー画像">
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="images/gallery_4.jpg" class="img-fluid rounded" alt="ギャラリー画像">
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="images/gallery_5.jpg" class="img-fluid rounded" alt="ギャラリー画像">
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="images/gallery_6.jpg" class="img-fluid rounded" alt="ギャラリー画像">
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="images/gallery_7.jpg" class="img-fluid rounded" alt="ギャラリー画像">
             </div>
         </div>
     </div>
