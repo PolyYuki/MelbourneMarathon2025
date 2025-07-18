@@ -69,5 +69,11 @@ const participants = [
         photo: "images/sena.jpg",
         race: "フルマラソン",
         comment: "いってらっしゃい！！"
+    },
+    {
+        nickname: "マサ",
+        photo: "images/masa.jpg",
+        race: "応援",
+        comment: "今年も楽しみましょう！"
     }
 ];
