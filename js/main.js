@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- カウントダウンタイマー ---
     const countdownElement = document.getElementById('countdown');
     if (countdownElement) {
-        const marathonDate = new Date('2025-10-12T00:00:00').getTime();
+        const marathonDate = new Date('2025-10-12T06:30:00').getTime();
 
         const updateCountdown = () => {
             const now = new Date().getTime();
