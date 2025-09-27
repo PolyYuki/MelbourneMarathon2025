@@ -81,5 +81,11 @@ const participants = [
         photo: "images/shoko.png",
         race: "応援",
         comment: "みなさんに会えるのを楽しみにしています！"
+    },
+    {
+        nickname: "Yuki",
+        photo: "images/yuki.jpg",
+        race: "5km",
+        comment: "自己ベスト出します！"
     }
 ];

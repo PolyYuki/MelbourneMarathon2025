@@ -81,6 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 return 'success';
             case '10km':
                 return 'info';
+            case '5km':
+                return 'success';
             case '応援':
                 return 'warning';
             default:
@@ -91,9 +93,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function getRaceLink(race, color) {
         let url = "#";
         if (race === 'フルマラソン') {
-            url = "https://melbournemarathon.com.au/marathon/";
+            url = "https://melbournemarathon.com.au/nike-melbourne-marathon/";
         } else if (race === '10km') {
-            url = "https://melbournemarathon.com.au/10km-run/";
+            url = "https://melbournemarathon.com.au/srilankan-airlines-10km-run/";
+        } else if (race === '5km') {
+            url = "https://melbournemarathon.com.au/5km-run/";
         }
 
         if (url !== "#") {
