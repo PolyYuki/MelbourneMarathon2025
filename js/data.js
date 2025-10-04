@@ -59,12 +59,6 @@ const participants = [
         comment: "３時間切り達成しマックス！"
     },
     {
-        nickname: "カテーテル志郎",
-        photo: "images/kateteru.jpg",
-        race: "10km",
-        comment: "俺本当に行くの？走るの？"
-    },
-    {
         nickname: "セナ",
         photo: "images/sena.jpg",
         race: "フルマラソン",
